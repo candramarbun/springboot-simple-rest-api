@@ -11,6 +11,7 @@ import java.util.HashMap;
 
 @ControllerAdvice
 public class RestErrorHandler {
+
     @ExceptionHandler(GeneralException.class)
     @ResponseStatus(HttpStatus.OK)
     @ResponseBody
