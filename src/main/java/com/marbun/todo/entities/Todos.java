@@ -13,6 +13,14 @@ public class Todos {
     @ManyToOne
     private TodoCategory todoCategory;
 
+    public Todos() {
+    }
+
+    public Todos(Integer id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
     public Integer getId() {
         return id;
     }
